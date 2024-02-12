@@ -25,3 +25,5 @@ RUN ./configure --sbin-path=/usr/sbin/nginx \
   --add-module=/app/nginx-rtmp-module-master \
   && make \
   && make install
+
+ENTRYPOINT [ "nginx" ]
