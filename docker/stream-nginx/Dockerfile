@@ -25,4 +25,4 @@ RUN ./configure --sbin-path=/usr/sbin/nginx \
   && make \
   && make install
 
-ENTRYPOINT /usr/sbin/nginx
+CMD ["nginx", "-g", "daemon off;"]
