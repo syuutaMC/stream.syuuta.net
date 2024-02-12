@@ -25,4 +25,4 @@ RUN ./configure --sbin-path=/usr/sbin/nginx \
   && make \
   && make install
 
-ENTRYPOINT /opt/local/nginx/sbin/nginx
+ENTRYPOINT /usr/sbin/nginx
