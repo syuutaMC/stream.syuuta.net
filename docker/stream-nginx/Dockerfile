@@ -3,6 +3,7 @@ WORKDIR /app
 
 # init
 RUN dnf update -y \
+  $$ dnf install -y epel-release \
   && dnf install -y zip unzip httpd-devel zlib gcc pcre-devel openssl openssl-devel glibc-langpack-ja.x86_64 wget
 
 # install Nginx
