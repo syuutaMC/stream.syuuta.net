@@ -13,7 +13,6 @@ services:
       # NGINXのコンフィグファイルをホストOSから、ゲストOSに連結する
       - ./stream.conf:/etc/nginx/conf.d/stream.conf
       - ./html:/usr/local/nginx/html/
-      - /var/log/nginx_stream:/var/log/
     tty: true
     restart: always
 
