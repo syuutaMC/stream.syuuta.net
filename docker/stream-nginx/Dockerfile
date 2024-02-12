@@ -3,7 +3,7 @@ WORKDIR /app
 
 # init
 RUN dnf update -y \
-  && dnf install -y zip unzip gcc pcre-devel openssl openssl-devel glibc-langpack-ja.x86_64 
+  && dnf install -y zip unzip gcc pcre-devel openssl openssl-devel glibc-langpack-ja.x86_64 wget
 
 # install Nginx
 RUN wget https://github.com/arut/nginx-rtmp-module/archive/master.zip \
