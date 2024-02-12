@@ -1,4 +1,4 @@
-FROM almalinux/almalinux/9-base
+FROM almalinux/9-base
 WORKDIR /app
 
 # init
