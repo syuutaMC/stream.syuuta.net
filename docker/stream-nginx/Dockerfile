@@ -2,7 +2,7 @@ FROM almalinux/9-base
 WORKDIR /app
 
 # init
-RUN dnf update \
+RUN dnf update -y \
   && dnf install -y zip unzip gcc pcre-devel openssl openssl-devel glibc-langpack-ja.x86_64\
   && localectl set-locale LANG=ja_JP.utf8 \
   && timedatectl set-timezone Asia/Tokyo
