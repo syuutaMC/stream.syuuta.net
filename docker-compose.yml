@@ -12,7 +12,7 @@ services:
     volumes:
       # NGINXのコンフィグファイルをホストOSから、ゲストOSに連結する
       - ./stream.conf:/etc/nginx/conf.d/stream.conf
-      - ./html:/var/www/html
+      - ./html:/usr/local/nginx/html/
     tty: true
     restart: always
 
