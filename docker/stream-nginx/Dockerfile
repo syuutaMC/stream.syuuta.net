@@ -1,4 +1,4 @@
-FROM almalinux/9-micro
+FROM almalinux/9-minimal
 WORKDIR /app
 
 # init
