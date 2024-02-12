@@ -4,7 +4,8 @@ WORKDIR /app
 # init
 RUN dnf update -y \
   $$ dnf install -y epel-release \
-  && dnf install -y zip unzip httpd-devel zlib-devel gcc pcre-devel openssl openssl-devel glibc-langpack-ja.x86_64 wget
+  && dnf install -y zip unzip httpd-devel zlib-devel gcc pcre-devel openssl openssl-devel glibc-langpack-ja.x86_64 wget \
+  && dnf clean all
 
 # install Nginx
 RUN wget https://github.com/arut/nginx-rtmp-module/archive/master.zip \
