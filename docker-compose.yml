@@ -8,6 +8,7 @@ services:
     container_name: nginx-stream.syuuta.net
     ports:
       - "1935:1935"
+      - "80:80"
     volumes:
       # NGINXのコンフィグファイルをホストOSから、ゲストOSに連結する
       - ./stream.conf:/etc/nginx/conf.d/stream.conf
