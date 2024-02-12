@@ -14,4 +14,4 @@ services:
     tty: true
     restart: always
 
-    command: ["nginx"]
+    command: service nginx start
