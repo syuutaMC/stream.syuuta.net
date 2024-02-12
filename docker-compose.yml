@@ -14,4 +14,4 @@ services:
     tty: true
     restart: always
 
-    command: service nginx start
+    command: nginx -g "daemon off;"

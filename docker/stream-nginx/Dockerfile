@@ -25,4 +25,4 @@ RUN ./configure --sbin-path=/usr/sbin/nginx \
   && make \
   && make install
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD nginx -g "daemon off;"
