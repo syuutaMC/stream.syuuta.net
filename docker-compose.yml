@@ -11,7 +11,7 @@ services:
       - "80:80"
     volumes:
       # NGINXのコンフィグファイルをホストOSから、ゲストOSに連結する
-      - ./stream.conf:/etc/nginx/conf.d/stream.conf
+      - ./nginx:/etc/nginx/nginx.conf
       - ./html:/usr/local/nginx/html/
     tty: true
     restart: always
